@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL T20 2025 Payment</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .payment-section {
+            margin-top: 20px;
+        }
+        .qr-container {
+            margin-top: 30px;
+        }
+        #payment-qr {
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>IPL T20 2025 Payment</h1>
+        <p>Welcome to the IPL T20 2025 payment page. Please scan the QR code below to make a payment.</p>
+
+        <div class="payment-section">
+            <p>Please complete your payment to confirm your booking.</p>
+
+            <!-- QR Code will appear here -->
+            <div id="payment-qr" class="qr-container"></div>
+
+            <p>Amount: ₹499</p>
+            <img src="pay.jpg" alt="">
+            <p>Scan the QR code to complete your payment.</p>
+          
+
+            <!-- Instructions -->
+            <p>Once the payment is successful, you'll receive a confirmation message.</p>
+        </div>
+    </div>
+
+    <script>
+        // You would replace this URL with the actual payment URL or code from your payment gateway
+        // var paymentLink = "https://paymentgateway.com/ipl_t20_2025_payment?amount=2000&transaction_id=IPL2025-001"; 
+        
+        // Create a QR Code with the payment link
+        var qrcode = new QRCode(document.getElementById("payment-qr"), {
+            text: paymentLink, // The URL to which the QR code will point
+            width: 150,
+            height: 150,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Page - Rajasthan Royals vs Chennai Super Kings</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="book.html">
+   
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+.event-details {
+    background-color: white;
+     
+     padding: 20px;
+    border-radius: 8px; 
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.event-details h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.event-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.team-info, .event-time, .ticket-details {
+    width: 30%;
+}
+
+.ticket-details .btn-buy {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.ticket-details .btn-buy:hover {
+    background-color: #e60000;
+}
+
+.event-description {
+    margin-top: 40px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="iplll_logo.avif" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="event-details">
+            
+           
+            <h1>Rajasthan Royals vs Chennai Super Kings</h1>
+            <div class="event-info">
+                <div class="team-info">
+                    <h2>Teams:</h2>
+                    <img src="rr.png" width="28%" height="34%" alt="Logo">
+                    <img src="csk.jpeg" width="28%" height="34%" alt="Logo">
+
+                    <p>Rajasthan Royals vs Chennai Super Kings</p>
+                </div>
+                <div class="event-time">
+                    <h2>Date & Time:</h2>
+                    <p>March 25, 2025, 7:30 PM IST</p>
+                </div>
+                <div class="ticket-details">
+                    <h2>Tickets:</h2>
+                    <a href="book.html" class="btn-buy">Buy Tickets</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="event-description">
+            <h2>About the Event</h2>
+            <p>This is an IPL match between Rajasthan Royals and Chennai Super Kings, two of the most popular teams in the league.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sports Event, All Rights Reserved.</p>
+    </footer>
+    <script>document.querySelector('.btn-buy').addEventListener('click', function() {
+        alert("Redirecting to the ticket purchase page!");
+    });
+    </script>
+
+</body>
+</html>
